@@ -4,7 +4,17 @@
     --text-color: #212121;
     --accent-text-color: #2196F3;
     --footer-color: #FFF; 
+    --section-team:  #F5F4FA;
 }
+
+.nav-link {
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.06;
+    letter-spacing: 0.28px;
+    }
 
 .nav-link:hover, .nav-link:focus {
     color: var(--accent-text-color);
@@ -13,6 +23,8 @@
 .current {
     color: var(--accent-text-color);
 }
+
+
 
 .header-span {
 color: var(--accent-text-color);
@@ -128,24 +140,24 @@ font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
 }
-
+/* 
 .work-img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
+} */
 
 .team {
 flex-shrink: 0;
-background: #F5F4FA;
+background: var(--section-team);
 }
 
-.team-img {
+/* .team-img {
 width: 270px;
 height: 260px;
 flex-shrink: 0;
-}
+} */
 
 .team-title {
 color: var(--text-color);
