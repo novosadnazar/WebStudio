@@ -9,7 +9,7 @@
 
 .nav-link {
     color: var(--text-color);
-    font-family: Roboto;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 1.06;
@@ -46,7 +46,6 @@ letter-spacing: 0.78px;
 
 .header-nav {
 color: var(--text-color);
-font-family: Roboto;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.2;
@@ -64,7 +63,6 @@ letter-spacing: 0.28px;
 
 .header-link {
 color: var(--warning-color);
-font-family: Roboto;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.2;
@@ -86,7 +84,6 @@ background: var(--background-color);
 .hero-title {
 color: #FFF;
 text-align: center;
-font-family: Roboto;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36; /* 136.364% */
@@ -106,7 +103,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .services-title {
     width: 270px;
     color: var(--text-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
@@ -119,7 +115,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     height: 72px;
     flex-shrink: 0;
     color: var(--warning-color);
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
@@ -129,7 +124,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .work-title {
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -157,7 +151,6 @@ flex-shrink: 0;
 .team-title {
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -167,7 +160,6 @@ letter-spacing: 1.08px;
 .team-caption {
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
@@ -177,7 +169,7 @@ letter-spacing: 0.48px;
 .team-text {
     color: var(--warning-color);
     text-align: center;
-    font-family: Roboto;
+
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
@@ -214,7 +206,6 @@ letter-spacing: 0.78px;
 height: 21px;
 flex-shrink: 0;
 color: var(--footer-color);
-font-family: Roboto;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
@@ -226,9 +217,12 @@ width: 136px;
 height: 21px;
 flex-shrink: 0;
 color: rgba(255, 255, 255, 0.60);
-font-family: Roboto;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+body {
+    font-family: Roboto;
 }
