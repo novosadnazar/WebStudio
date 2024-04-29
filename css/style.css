@@ -7,6 +7,10 @@
     --section-team:  #F5F4FA;
 }
 
+body {
+    font-family: Roboto;
+}
+
 .nav-link {
     color: var(--text-color);
 
@@ -223,6 +227,3 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
-body {
-    font-family: Roboto;
-}
