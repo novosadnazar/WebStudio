@@ -3,12 +3,13 @@
     --warning-color: #757575;
     --text-color: #212121;
     --accent-text-color: #2196F3;
-    --footer-color: #FFF; 
+    --footer-color: #FFF;
+    --header-log: #000; 
 }
 
 *,
-*:: after,
-*:: before {
+*::after,
+*::before {
 box-sizing: border-box;
 }
 
@@ -64,7 +65,7 @@ body {
     }
      
     .header-logo {
-        color: var(--text-color);
+        color: var(--header-log);
         font-family: "Raleway", sans-serif;
         font-size: 26px;
         font-weight: 700;
@@ -183,8 +184,7 @@ letter-spacing: 0.42px;
 }
 
 .footer-link {
-flex-shrink: 0;
-color: rgba(255, 255, 255, 0.60);
+color: var(--footer-color);
 font-family: Roboto;
 font-size: 14px;
 font-weight: 400;
