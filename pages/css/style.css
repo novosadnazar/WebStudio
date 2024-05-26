@@ -172,10 +172,16 @@ background: #2196F3;
 
 }
 
+.cards-button {
+    padding-bottom: 94px;
+    padding-top: 78px;
+}
+
 .list-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
     
 }
 
