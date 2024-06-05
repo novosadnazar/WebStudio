@@ -196,7 +196,8 @@ padding-top: 0;
 
 .cards-image {
     width: 370px;
-    /* height: 294px;  */
+    height: 294px; 
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .cards-title {
