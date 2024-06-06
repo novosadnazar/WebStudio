@@ -186,18 +186,15 @@ background: #2196F3;
 }
 
 .cards {
-width: 370px;
-height: 404px;
 border: 1px solid var(--portfolio-color);
 background: var(--footer-color);
 padding-top: 0;
+flex-basis: calc((100% - 60px) / 3);
 
 }
 
 .cards-image {
-    width: 370px;
-    height: 294px; 
-    flex-basis: calc((100% - 60px) / 3);
+    width: 100%;
 }
 
 .cards-title {
