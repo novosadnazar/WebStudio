@@ -148,6 +148,7 @@ letter-spacing: 0.28px;
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .button-btn {
@@ -210,10 +211,10 @@ line-height: 2; /* 200% */
 letter-spacing: 1.08px;
 width: 322px;
 height: 36px;
-margin-left: auto;
+/* margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
-margin-bottom: 4px;
+margin-bottom: 4px; */
 
 }
 
