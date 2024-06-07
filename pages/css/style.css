@@ -141,7 +141,7 @@ letter-spacing: 0.28px;
 
 .cards {
     padding-top: 94px;
-    padding-bottom: 94px;
+
 }
 
 .button-list {
@@ -197,6 +197,11 @@ flex-basis: calc((100% - 60px) / 3);
     width: 100%;
 }
 
+.cards-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .cards-title {
     color: var(--text-color);
 font-size: 18px;
@@ -208,6 +213,7 @@ height: 36px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
+margin-bottom: 4px;
 
 }
 
