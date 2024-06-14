@@ -189,6 +189,31 @@ margin-bottom: 30px;
     margin-bottom: 10px;
 }
 
+.services-item::before {
+    content: "";
+border-radius: 4px;
+background: var(--section-team);
+width: 270px;
+height: 120px;
+display: block;
+background-image: url(../images/antenna1.png);
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: 30px;
+} 
+
+.services-item:nth-child(2)::before {
+    background-image: url(../images/clock\ 1.png);
+}
+
+.services-item:nth-child(3)::before {
+    background-image: url(../images/diagram1.png); 
+}
+
+.services-item:nth-child(4)::before {
+    background-image: url(../images/astronaut1.png);
+}
+
 .services-text {
     flex-shrink: 0;
     color: var(--warning-color);
