@@ -196,14 +196,14 @@ background: var(--section-team);
 width: 270px;
 height: 120px;
 display: block;
-background-image: url(../images/antenna1.png);
+background-image: url(../images/antenna.png);
 background-repeat: no-repeat;
 background-position: center;
 margin-bottom: 30px;
 } 
 
 .services-item:nth-child(2)::before {
-    background-image: url(../images/clock\ 1.png);
+    background-image: url(../images/clock.png);
 }
 
 .services-item:nth-child(3)::before {
@@ -211,7 +211,7 @@ margin-bottom: 30px;
 }
 
 .services-item:nth-child(4)::before {
-    background-image: url(../images/astronaut1.png);
+    background-image: url(../images/astronaut.png);
 }
 
 .services-text {
