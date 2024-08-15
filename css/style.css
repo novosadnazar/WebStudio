@@ -10,6 +10,10 @@
     --hero-linaar: rgba(47, 48, 58, 0.4);
     --svg-color:  rgba(175, 177, 184, 1);
     --border-color: #AFB1B8;
+    --footer-svg: rgba(255, 255, 255, 0.10);
+    --list-color: rgba(255, 255, 255, 1);
+    --header-svg: rgba(117, 117, 117, 1);    
+    
    
 }
 
@@ -132,6 +136,20 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.28px;
+}
+
+.header-svg {
+    fill: var(--header-svg);
+    width: 16px;
+height: 12px;
+margin-right: 10px;
+}
+
+.header-svd {
+    fill: var(--header-svg);
+    width: 10px;
+height: 16px;
+margin-right: 10px;
 }
 
 
@@ -302,7 +320,7 @@ margin-bottom: 50px;
 border: 1px;
 background-color: var(--footer-color);
 width: 270px;
-height: 368px;
+height: 428px;
 }
 
 .team-box{
@@ -329,6 +347,29 @@ letter-spacing: 0.48px;
     margin-top: 10px;
 }
 
+.team-lest {
+justify-content: center;
+    display: flex;
+    gap: 34px;
+}
+
+.team-link:hover {
+    width: 44px;
+height: 44px;
+fill: var(--accent-text-color);
+}
+
+.team-svg {
+    fill: var(--svg-color);
+width: 20px;
+height: 20px;
+}
+
+.team-svg:hover {
+fill: var(--accent-text-color);
+
+}
+
 .regular {
 justify-content: center;
     padding-top: 94px;
@@ -353,8 +394,11 @@ margin-bottom: 50px;
 .regular-item {
 width: 170px;
 height: 92px;
-    border-radius: 4px;
-border: 1px var(--border-color);
+
+}
+
+.regular-link {
+    justify-content: center;
 }
 
 .regular-svg {
@@ -425,5 +469,28 @@ letter-spacing: 0.42px;
 
 .footer-link:hover, .footer-link:focus {
     color: var(--accent-text-color);
+}
+
+.footer-lest {
+    display: flex;
+    gap: 34px;
+
+}
+
+.footer-title {
+    color: var(--footer-color);
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 700;
+line-height: 2.2;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+.footer-svg {
+fill: var(--list-color);
+width: 20px;
+height: 20px;
 }
 
