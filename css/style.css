@@ -136,18 +136,22 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.28px;
+display: flex;
+align-items: center;
+
 }
 
 .header-svg {
     fill: var(--header-svg);
-    width: 16px;
+    width: 10px;
 height: 12px;
 margin-right: 10px;
+
 }
 
 .header-svd {
     fill: var(--header-svg);
-    width: 10px;
+    width: 16px;
 height: 16px;
 margin-right: 10px;
 }
@@ -155,6 +159,9 @@ margin-right: 10px;
 
 .header-link:hover, .header-link:focus {
     color: var(--accent-text-color);
+    .header-svd {
+        fill: var(--accent-text-color);
+    }
 }
 
 .section-hero {
