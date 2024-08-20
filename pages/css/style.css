@@ -50,6 +50,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.line-header {
+    width: 1200px;
+height: 1px;
+background-color: var(--header-line);
+margin-top: 34px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -69,7 +76,7 @@ body {
     color: var(--accent-text-color);
 } 
 
-.current {
+.activ {
     color: var(--accent-text-color);
 }
 

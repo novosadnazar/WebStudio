@@ -70,9 +70,6 @@ body {
     color: var(--accent-text-color);
 } 
 
-.current {
-    color: var(--accent-text-color);
-}
 
 .header {
     padding-top: 24px;
@@ -174,7 +171,7 @@ text-align: center;
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),   url(../images/hero-fon.png);
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),   url(../images/hero-fon.jpg);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
