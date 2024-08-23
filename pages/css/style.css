@@ -51,7 +51,7 @@ body {
 }
 
 .line-header {
-    width: 1200px;
+    width: 1700px;
 height: 1px;
 background-color: var(--header-line);
 margin-top: 34px;
@@ -76,9 +76,10 @@ margin-top: 34px;
     color: var(--accent-text-color);
 } 
 
-.activ {
+.current {
     color: var(--accent-text-color);
 }
+
 
 .header {
     padding-top: 24px;

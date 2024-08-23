@@ -69,7 +69,9 @@ body {
 .nav-link:hover, .nav-link:focus {
     color: var(--accent-text-color);
 } 
-
+.current {
+    color: var(--accent-text-color);
+}
 
 .header {
     padding-top: 24px;
