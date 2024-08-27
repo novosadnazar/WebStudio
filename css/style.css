@@ -618,6 +618,8 @@ margin-bottom: 20px;
         line-height: normal;
         letter-spacing: 0.12px;
       }
+
+    
       
       .modal-input {
         display: block;
@@ -629,6 +631,8 @@ margin-bottom: 20px;
         padding-right: 11px;
         margin-bottom: 10px;
       }
+
+     
       
       .modal-com {
         color: var(--modal-color);
@@ -671,6 +675,15 @@ margin-bottom: 20px;
         top: 50%;
         left: 15px;
       }
+
+      .modal-svg:hover {
+        fill: var(--accent-text-color);
+      }
+
+      .modal-input:hover {
+        border-color: var(--accent-text-color);
+        border-radius: 4px;
+     }
 
       .modal-text {
         color: var(--warning-color);
