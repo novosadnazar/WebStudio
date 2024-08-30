@@ -596,16 +596,26 @@ margin-bottom: 20px;
         padding: 40px;
       }
 
-    .modal-clouse {
-        fill: var(--header-log);
-        width: 18px;
-        height: 18px;
-        border: 1px solid var(--border-color);
+    .modal-button {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
+        background-color: transparent;
+        padding: 6px;
         position: absolute;
-        top: 17px;
-        right: 17px;
+        top: 14px;
+        right: 14px;
+        border: 1px solid var(--border-color);
     }
+
+    .modal-clouse{
+        width: 18px;
+        height: 10px;
+    }
+
       
       .modal-title {
         color: var(--text-color);
