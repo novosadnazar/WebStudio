@@ -610,16 +610,20 @@ margin-bottom: 20px;
         align-items: center;
         border-radius: 50%;
         background-color: transparent;
-        padding: 6px;
+        padding: 9px;
         position: absolute;
         top: 14px;
         right: 14px;
         border: 1px solid var(--border-color);
     }
 
+    .modal-button:hover, .modal-button:focus {
+        fill: var(--accent-text-color);
+    }
+
     .modal-clouse{
         width: 18px;
-        height: 10px;
+        height: 18px;
     }
 
       
@@ -631,6 +635,15 @@ margin-bottom: 20px;
         line-height: 1.15;
         letter-spacing: 0.6px;
         margin-bottom: 12px;
+      }
+
+      .modal-bux:hover, .modal-bux:focus {
+        .modal-input {
+            border-color: var(--accent-text-color);
+        }
+        .modal-svg:hover, .modal-svg:focus {
+            fill: var(--accent-text-color);
+        }
       }
 
       .modal-label {
@@ -676,7 +689,7 @@ margin-bottom: 20px;
         border: 1px solid rgba(33, 33, 33, 0.20);
       }
 
-      .modal-com:hover {
+      .modal-com:hover .modal-com:focus{
           color: var(--accent-text-color);
           outline: 1px solid var(--accent-text-color);
       } 
@@ -710,11 +723,8 @@ margin-bottom: 20px;
         left: 15px;
       }
 
-      .modal-svg:hover {
-        fill: var(--accent-text-color);
-      }
 
-      .modal-input:hover {
+      .modal-input:hover, .modal-input:focus {
         border-color: var(--accent-text-color);
         border-radius: 4px;
      }
