@@ -42,7 +42,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
       </div>
       </section>
       <!-- секція наші послуги -->
@@ -274,9 +274,9 @@
       </div>
     </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-button"><svg class="modal-clouse">
+        <button type="button" class="modal-button" data-modal-close><svg class="modal-clouse">
           <use href="./images/symbol-defs.svg#close"></use>
         </svg></button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -316,5 +316,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
