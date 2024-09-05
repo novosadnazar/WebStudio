@@ -15,7 +15,7 @@
     --header-svg: rgba(117, 117, 117, 1);    
     --foot-color: rgba(255, 255, 255, 0.10);
     --modal-color: rgba(117, 117, 117, 0.50);
-   
+   --form-color: rgba(255, 255, 255, 0.6);
 }
 
 /* index */
@@ -517,7 +517,6 @@ height: 60px;
 
     .footer-title {
         color: var(--footer-color);
-font-family: "Roboto";
 font-size: 14px;
 font-weight: 700;
 line-height: 2.2;
@@ -574,6 +573,72 @@ margin-bottom: 20px;
 
     .foot-link:hover {
         background-color: var(--accent-text-color);
+    }
+
+    .form-box {
+        position: absolute;
+        left: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-form {
+        display: flex;
+        margin-left: 93px;
+        padding-bottom: 19px;
+        gap: 12px;
+      }
+
+      .ft-lbl {
+        color: var(--footer-color);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+      }
+
+    .footer-input {
+        width: 358px;
+        display: block;
+        color: var(--form-color);
+        background-color: transparent;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0.48px;
+      padding: 15px 16px;
+      border-radius: 4px;
+      border-radius: 4px;
+      border: 1px solid var(--form-color);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      outline: none;
+      margin-top: 20px;
+    }
+
+    .button-send {
+        display: flex;
+        align-items: center;
+        background-color: var(--accent-text-color);
+        color: var(--footer-color);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87; 
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 28px 10px 28px;
+        height: 50px;
+        margin-top: 36px;
+        border: none;
+    }
+
+    .footer-send {
+        fill: var(--footer-color);
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
     }
 
     .backdrop {
@@ -641,7 +706,7 @@ margin-bottom: 20px;
         .modal-input {
             border-color: var(--accent-text-color);
         }
-        .modal-svg:hover, .modal-svg:focus {
+        .modal-svg {
             fill: var(--accent-text-color);
         }
       }
@@ -694,11 +759,7 @@ margin-bottom: 20px;
           outline: 1px solid var(--accent-text-color);
       } 
 
-      .byx {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+     
 
       .modal-span {
         color: var(--accent-text-color);
@@ -743,6 +804,12 @@ margin-bottom: 20px;
       .modal-checkbox {
         width: 16px;
         height: 15px;
+      }
+
+      .modal-lbl{
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .modal-btn {
