@@ -50,12 +50,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.line-header {
-    width: 1700px;
-height: 1px;
-background-color: var(--header-line);
-margin-top: 34px;
-}
+
 
 .container {
     width: 1200px;
@@ -80,10 +75,27 @@ margin-top: 34px;
     color: var(--accent-text-color);
 }
 
+.nav-item {
+    position: relative;   
+   }
+   
+   .current::after {
+       content: "";
+       width: 100%;
+       height: 4px;
+       display: block;
+       border-radius: 2px;
+       background: var(--accent-text-color);
+       position: absolute;
+       top: 47px;
+       left: 0;
+   }
+
 
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--header-line);
 }
 
 .header-span {
@@ -173,11 +185,22 @@ margin-right: 10px;
 
 .cards {
     padding-top: 94px;
+    border: 1px solid var(--portfolio-color);
+background: var(--footer-color);
+padding-top: 0;
+flex-basis: calc((100% - 60px) / 3);
+position: relative;
 }
 
 .cards:hover, .cards:focus {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    opacity: 1;
+    .overlay {
+        opacity: 1;
+    }
 }
+
+
 
 .button-list {
     display: flex;
@@ -221,16 +244,28 @@ border: none;
     gap: 30px;
 }
 
-.cards {
-border: 1px solid var(--portfolio-color);
-background: var(--footer-color);
-padding-top: 0;
-flex-basis: calc((100% - 60px) / 3);
-
-}
-
 .cards-image {
     width: 100%;
+}
+
+.overlay {
+padding: 63px 24px;
+position: absolute;
+top: 0;
+left: 0;
+width: 370px;
+height: 294px;
+background: rgba(33, 150, 243, 0.90);
+opacity: 0;
+}
+
+.card-paragraph {
+    width: 322px;
+color: var(--footer-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.54px;
 }
 
 .cards-div {
