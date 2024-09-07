@@ -414,6 +414,6 @@ margin-bottom: 20px;
         align-items: center;
     }
 
-    .foot-link:hover {
+    .foot-link:hover .foot-link:focus {
         background-color: var(--accent-text-color);
     }
