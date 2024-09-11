@@ -69,9 +69,17 @@ body {
 
 .nav-link:hover, .nav-link:focus {
     color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 } 
 .current {
     color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .nav-item {
@@ -88,6 +96,15 @@ body {
     position: absolute;
     top: 47px;
     left: 0;
+    opacity: 0;
+}
+
+.current:hover::after {
+    opacity: 1;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 
 .header {
@@ -176,8 +193,16 @@ margin-right: 10px;
 
 .header-link:hover, .header-link:focus {
     color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     .header-smartphone {
         fill: var(--accent-text-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
     }
 }
 
@@ -394,10 +419,18 @@ justify-content: center;
     gap: 10px;
 }
 
-.team-link:hover .team-link:focus{
+.team-link:hover, .team-link:focus{
     background-color: var(--accent-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
     .team-svg {
         fill: var(--footer-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: o;
     }
 
 }
@@ -455,10 +488,18 @@ justify-content: center;
 align-items: center;
 }
 
-.regular-link:hover .regular-link:focus {
+.regular-link:hover, .regular-link:focus {
  border-color: var(--accent-text-color);
+ transition-property: border-color, color;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-delay: 0;
  .regular-svg {
     fill: var(--accent-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
  }
 }
 
@@ -530,6 +571,10 @@ height: 60px;
     
     .footer-link:hover, .footer-link:focus {
         color: var(--accent-text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
     }
 
     .footer-title {
@@ -575,8 +620,12 @@ margin-bottom: 20px;
         background-color: var(--foot-color);
     }
 
-    .footer-item:hover  .footer-item:focus {
+    .footer-item:hover,  .footer-item:focus {
         background-color: var(--accent-text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
     }
 
     .foot-link {
@@ -589,8 +638,12 @@ margin-bottom: 20px;
         align-items: center;
     }
 
-    .foot-link:hover .foot-link:focus{
+    .foot-link:hover, .foot-link:focus{
         background-color: var(--accent-text-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
     }
 
     .form-box {
@@ -699,6 +752,10 @@ margin-bottom: 20px;
 
     .modal-button:hover, .modal-button:focus {
         fill: var(--accent-text-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
     }
 
     .modal-clouse{
@@ -720,9 +777,17 @@ margin-bottom: 20px;
       .modal-bux:hover, .modal-bux:focus {
         .modal-input {
             border-color: var(--accent-text-color);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
         }
         .modal-svg {
             fill: var(--accent-text-color);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0;
         }
       }
 
@@ -772,6 +837,10 @@ margin-bottom: 20px;
       .modal-com:hover .modal-com:focus{
           color: var(--accent-text-color);
           outline: 1px solid var(--accent-text-color);
+          transition-property: fill;
+          transition-duration: 250ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-delay: 0;
       } 
 
      
@@ -803,6 +872,18 @@ margin-bottom: 20px;
       .modal-input:hover, .modal-input:focus {
         border-color: var(--accent-text-color);
         border-radius: 4px;
+        transition-property: border, color ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+     }
+
+     .modal-input:hover + .model-svg, .modal-input:focus + .model-svg {
+        fill: var(--accent-text-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
      }
 
       .modal-text {
