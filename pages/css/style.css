@@ -298,7 +298,7 @@ transition-property: box-shadow ;
 .cards:hover, .cards:focus {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     border: 1px solid var(--item-border);
-background: var(--footer-color);
+    background: var(--footer-color);
     opacity: 1;
     .overlay {
         opacity: 1;
@@ -324,6 +324,21 @@ background: var(--footer-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
     transform: translateY(100%);
+}
+
+.card-box {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card-box:hover, .card-paragraph {
+    opacity: 1;
+   transform: translate(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-delay: 0;
+    overflow: hidden;
 }
 
 .cards-image {
