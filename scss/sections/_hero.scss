@@ -1,21 +1,19 @@
 .hero {
-    background: var(--background-color);
+    background: $background-color;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    }
+    background-image: linear-gradient( $hero-linaar, $hero-linaar),   url(../images/hero-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     
-    .hero {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),   url(../images/hero-fon.jpg);
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    
+
+     
     
     .hero-title {
-    color: var(--footer-color);
+    color: $footer-color;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -40,13 +38,13 @@
     }
     
     .hero-btn { 
-        color: var(--footer-color);
+        color: $footer-color;
         font-size: 16px;
         font-weight: 700;
         line-height: 1.87; 
         letter-spacing: 0.96px;
         border-radius: 4px;
-        background-color: var(--accent-text-color);
+        background-color: $accent-text-color;
         padding: 10px 32px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         animation-name: btn-move;

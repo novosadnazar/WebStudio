@@ -1,6 +1,6 @@
 .modal {
     width: 528px;
-    background-color: var(--footer-color);
+    background-color: $footer-color;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -22,7 +22,7 @@
     position: absolute;
     top: 14px;
     right: 14px;
-    border: 1px solid var(--border-color);
+    border: 1px solid $border-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,7 +30,7 @@
 }
 
 .modal-button:hover, .modal-button:focus {
-    fill: var(--accent-text-color);
+    fill: $accent-text-color;
    
 }
 
@@ -41,7 +41,7 @@
 
   
   .modal-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -52,14 +52,14 @@
 
   .modal-bux:hover, .modal-bux:focus {
     .modal-input {
-        border-color: var(--accent-text-color);
+        border-color: $accent-text-color;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0;
     }
     .modal-svg {
-        fill: var(--accent-text-color);
+        fill: $accent-text-color;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,7 +70,7 @@
   .modal-label {
     width: 448px;
     height: 40px;
-    color: var(--warning-color);
+    color: $warning-color;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -88,7 +88,8 @@
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 11px;
-    margin-bottom: 10px;border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     transition-property: border, color ;
     transition-duration: 250ms;
@@ -99,7 +100,7 @@
  
   
   .modal-com {
-    color: var(--modal-color);
+    color: $modal-color;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
@@ -110,7 +111,8 @@
     margin-bottom: 20px;
     padding: 12px 16px;
     resize: none;
-    margin-bottom: 10px;border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     transition-property: fill;
       transition-duration: 250ms;
@@ -119,15 +121,15 @@
   }
 
   .modal-com:hover .modal-com:focus{
-      color: var(--accent-text-color);
-      outline: 1px solid var(--accent-text-color);
+      color: $accent-text-color;
+      outline: 1px solid $accent-text-color;
       
   } 
 
  
 
   .modal-span {
-    color: var(--accent-text-color);
+    color: $accent-text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.17;
@@ -155,18 +157,18 @@
 
 
   .modal-input:hover, .modal-input:focus {
-    border-color: var(--accent-text-color);
+    border-color: $accent-text-color;
     border-radius: 4px;
    
  }
 
  .modal-input:hover + .model-svg, .modal-input:focus + .model-svg {
-    fill: var(--accent-text-color);
+    fill: $accent-text-color;
    
  }
 
   .modal-text {
-    color: var(--warning-color);
+    color: $warning-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -188,7 +190,7 @@
   }
 
   .modal-btn {
-    color: var(--footer-color);
+    color: $footer-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -196,7 +198,7 @@
     letter-spacing: 0.96px;
     border: none;
     border-radius: 4px;
-    background: var(--accent-text-color);
+    background: $accent-text-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
     margin-top: 30px;

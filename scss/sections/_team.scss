@@ -8,7 +8,7 @@
 }
 
 .team {
-background: var(--section-team);
+background: $section-team;
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -19,7 +19,7 @@ height: 260px;
 }
 
 .team-title {
-color: var(--text-color);
+color: $text-color;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
@@ -30,7 +30,7 @@ margin-bottom: 50px;
 
 .team-item {
     border-radius: 0px 0px 4px 4px;
-background-color: var(--footer-color);
+background-color: $footer-color;
 }
 
 .team-box{
@@ -39,7 +39,7 @@ background-color: var(--footer-color);
 }
 
 .team-caption {
-color: var(--text-color);
+color: $text-color;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
@@ -48,7 +48,7 @@ letter-spacing: 0.48px;
 }
 
 .team-text {
-    color: var(--warning-color);
+    color: $warning-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -65,10 +65,10 @@ justify-content: center;
 }
 
 .team-link:hover, .team-link:focus{
-    background-color: var(--accent-text-color);
+    background-color: $accent-text-color;
    
     .team-svg {
-        fill: var(--footer-color);
+        fill: $footer-color;
         
     }
 
@@ -89,7 +89,7 @@ justify-content: center;
 }
 
 .team-svg {
-    fill: var(--svg-color);
+    fill: $svg-color;
 width: 20px;
 height: 20px;
 transition-property: fill;

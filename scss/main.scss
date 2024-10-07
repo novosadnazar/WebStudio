@@ -1,7 +1,7 @@
-@import "./base/command";
-@import "./base/container";
 @import "./base/reset";
 @import "./base/variables";
+@import "./base/command";
+@import "./base/container";
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/services";
@@ -10,3 +10,4 @@
 @import "./sections/regular";
 @import "./sections/footer";
 @import "./sections/modal";
+@import "./sections/card"

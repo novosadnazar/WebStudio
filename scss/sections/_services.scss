@@ -10,7 +10,7 @@
 
 .services-title {
     width: 270px;
-    color: var(--text-color);
+    color: $text-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
@@ -22,7 +22,7 @@
 .services-item::before {
     content: "";
 border-radius: 4px;
-background: var(--section-team);
+background: $section-team;
 width: 270px;
 height: 120px;
 display: block;
@@ -46,7 +46,7 @@ margin-bottom: 30px;
 
 .services-text {
     flex-shrink: 0;
-    color: var(--warning-color);
+    color: $warning-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71; 
