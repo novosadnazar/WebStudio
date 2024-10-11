@@ -16,18 +16,14 @@ position: relative;
     transform: translateY(0);
 
  }
-    
-}
 
-
-
-.card__box {
+ &__box {
     position: relative;
     overflow: hidden;
 
 }
 
-.card__paragraph{
+&__paragraph{
     position: absolute;
     top: 0;
     left: 0;
@@ -46,6 +42,14 @@ position: relative;
     align-items: center;
     transition: transform 250ms;
 }
+    
+}
+
+
+
+
+
+
 
 
 
