@@ -16,8 +16,7 @@
         &__title {
             color: $text-color;
             text-align: center;
-            font-size: 36px;
-            font-weight: 700;
+           @extend %font-three;
             line-height: 1.16;
             letter-spacing: 1.08px;
             margin-bottom: 50px;
@@ -37,8 +36,7 @@
             &__paragraph {
                 color: $footer-color;
             text-align: center;
-            font-size: 14px;
-            font-weight: 700;
+            @extend %font;
             line-height: 1.1;
             letter-spacing: 0.42px;
             text-transform: uppercase;

@@ -1,122 +1,98 @@
 .team {
-    background: $section-team;
-    padding-top: 94px;
-    padding-bottom: 94px; 
+  background: $section-team;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
+  &__item {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  }
 
-    &__item {
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__img {
+    width: 270px;
+    height: 260px;
+  }
+
+  &__title {
+    color: $text-color;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    border-radius: 0px 0px 4px 4px;
+    background-color: $footer-color;
+  }
+
+  &__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__caption {
+    color: $text-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+  }
+
+  &__text {
+    color: $warning-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  &__lest {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-text-color;
+
+    .team__svg {
+      fill: $footer-color;
     }
+  }
 
-    &__list {
-        display: flex;
-      gap: 30px;
-    }
-    
-    &__img {
-        width: 270px;
-        height: 260px;
-        }
-        
+  &__link {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+  @include flex-box();
+    justify-content: center; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
 
-        &__title {
-            color: $text-color;
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.16;
-            letter-spacing: 1.08px;
-            margin-bottom: 50px;
-            }
-
-            &__item {
-                border-radius: 0px 0px 4px 4px;
-            background-color: $footer-color;
-            }
-
-            &__box{
-                padding-top: 30px;
-                padding-bottom: 30px;
-            }
-
-            &__caption {
-                color: $text-color;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.18;
-                letter-spacing: 0.48px;
-                }
-
-     &__text {
-         color: $warning-color;
-         text-align: center;
-        font-size: 16px;
-         font-weight: 400;
-         line-height: 1.18;
-         letter-spacing: 0.48px;
-         margin-top: 10px;
-         margin-bottom: 16px;
-    }
-
-    &__lest {
-        justify-content: center;
-            display: flex;
-            gap: 10px;
-        }
-
-        &__link:hover, &__link:focus{
-            background-color: $accent-text-color;
-           
-            .team__svg {
-                fill: $footer-color;
-                
-            }
-        
-        }
-
-        &__link {
-            width: 44px;
-            height: 44px;
-            padding: 12px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-delay: 0;
-        }
-
-        &__svg {
-            fill: $svg-color;
-        width: 20px;
-        height: 20px;
-        transition-property: fill;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                transition-delay: 0;
-        }
+  &__svg {
+    fill: $svg-color;
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

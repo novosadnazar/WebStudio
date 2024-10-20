@@ -9,8 +9,7 @@
     &__title {
         width: 270px;
         color: $text-color;
-        font-size: 14px;
-        font-weight: 700;
+       @extend %font;
         line-height: 1.2;
         letter-spacing: 0.42px;
         text-transform: uppercase;
@@ -45,8 +44,7 @@
     &__text {
         flex-shrink: 0;
         color: $warning-color;
-        font-size: 14px;
-        font-weight: 400;
+        @extend %font;
         line-height: 1.71; 
         letter-spacing: 0.42px;  
     }
