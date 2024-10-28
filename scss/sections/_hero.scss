@@ -1,26 +1,45 @@
 .hero {
     background: $background-color;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
     background-image: linear-gradient( $hero-linaar, $hero-linaar),   url(../images/hero-fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
+@media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
     &__title {
         color: $footer-color;
         text-align: center;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.36; 
-        letter-spacing: 2.64px;
+        line-height: 1.61; 
+        letter-spacing: 1.56px;
         text-transform: uppercase;
-        width: 696px;
+        width: 360px;
         margin-left: auto;
         margin-right: auto ;
         margin-bottom: 30px;
         animation-name: move-title;
         animation-duration: 2000ms;
+
+        @media screen and (min-width: 480px) {
+           }
+
+        @media screen and (min-width: 768px) {
+         
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-style: 44px;
+            line-height: 1.36;
+            letter-spacing: 2.64px;
+            width: 696px;
+        }
         }
 
         @keyframes move-title {
@@ -40,10 +59,16 @@
             letter-spacing: 0.96px;
             border-radius: 4px;
             background-color: $accent-text-color;
-            padding: 10px 32px;
+            padding: 10px 24px;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             animation-name: btn-move;
             animation-duration: 2000ms;
+
+
+
+            @media screen and (min-width: 12000px) {
+                padding: 10px 32px;
+            }
         }
 
         @keyframes btn-move{
