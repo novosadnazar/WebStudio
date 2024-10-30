@@ -42,7 +42,7 @@ button {
 }
 
 .regular__title, .work__title {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
 }
 
@@ -346,51 +346,107 @@ body {
 }
 
 .services {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 .services__list {
+  flex-direction: column;
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .services__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.services__item::before {
+  content: "";
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .services__item::before {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item::before {
+    width: 270px;
+  }
+}
+.services__item:first-child::before {
+  background-image: url(/images/antenna.png);
+}
+.services__item:nth-child(2)::before {
+  background-image: url(/images/clock.png);
+}
+.services__item:nth-child(3)::before {
+  background-image: url(/images/diagram1.png);
+}
+.services__item:last-child::before {
+  background-image: url(/images/astronaut.png);
+}
 .services__title {
-  width: 270px;
   color: #212121;
-  line-height: 1.2;
+  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.services__item::before {
-  content: "";
-  border-radius: 4px;
-  background: #F5F4FA;
-  width: 270px;
-  height: 120px;
-  display: block;
-  background-image: url(../images/antenna.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-.services__item:nth-child(2)::before {
-  background-image: url(../images/clock.png);
-}
-.services__item:nth-child(3)::before {
-  background-image: url(../images/diagram1.png);
-}
-.services__item:nth-child(4)::before {
-  background-image: url(../images/astronaut.png);
+@media screen and (min-width: 768px) {
+  .services__title {
+    text-align: start;
+  }
 }
 .services__text {
-  flex-shrink: 0;
   color: #757575;
   line-height: 1.71;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.4px;
+}
+@media screen and (min-width: 480px) {
+  .services__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__text {
+    width: 270px;
+  }
 }
 
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: flex;
+  }
 }
 .work__list {
   display: flex;
@@ -426,28 +482,63 @@ body {
 
 .team {
   background: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__item {
+  flex-basis: 100%;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .team__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
 }
 .team__img {
-  width: 270px;
-  height: 260px;
+  width: 100%;
 }
 .team__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 }
 .team__item {
   border-radius: 0px 0px 4px 4px;
@@ -511,19 +602,44 @@ body {
 
 .regular {
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .regular {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .regular__title {
   color: #212121;
   text-align: center;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  line-height: 1.17;
+  letter-spacing: 0.84px;
+}
+@media screen and (min-width: 1200px) {
+  .regular__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+  }
 }
 .regular__list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .regular__list {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular__list {
+    width: 100%;
+  }
 }
 .regular__item {
   width: 170px;
@@ -925,8 +1041,14 @@ body {
 }
 
 .cards {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .cards__list {
   display: flex;
