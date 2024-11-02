@@ -69,7 +69,9 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.28px;
-    @include flex-box();
+    display: none;
+    margin-left: auto;
+   align-items: center;
    
 
     @media screen and (min-width: 480px) {
