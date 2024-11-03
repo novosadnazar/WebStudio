@@ -30,6 +30,7 @@ margin-bottom: 30px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+
     
     @media screen and (min-width: 480px) {
       flex-wrap: wrap;
@@ -51,11 +52,11 @@ margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 60px) / 3);
-     }
+    }
 
-     @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 150px) / 6);
-     }
+    }
   }
 
   &__link {
