@@ -20,7 +20,7 @@
         line-height: 1.61; 
         letter-spacing: 1.56px;
         text-transform: uppercase;
-        width: 360px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto ;
         margin-bottom: 30px;
@@ -28,6 +28,7 @@
         animation-duration: 2000ms;
 
         @media screen and (min-width: 480px) {
+
            }
 
         @media screen and (min-width: 768px) {
@@ -35,7 +36,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            font-style: 44px;
+            font-size: 44px;
             line-height: 1.36;
             letter-spacing: 2.64px;
             width: 696px;
