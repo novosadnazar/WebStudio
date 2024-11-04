@@ -298,6 +298,11 @@ body {
   animation-name: move-title;
   animation-duration: 2000ms;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
