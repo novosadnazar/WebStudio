@@ -856,40 +856,29 @@ body {
 }
 .footer__adpt {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   gap: 60px;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer__adpt {
     flex-direction: row;
-    gap: 165px;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__adpt {
-    justify-content: start;
-    gap: 93px;
-    margin-right: auto;
+    align-items: center;
+    gap: 70px;
   }
 }
 .footer__drop {
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .footer__drop {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__drop {
     text-align: start;
-    margin-left: 0;
-    margin-right: auto;
   }
 }
 .footer__span {
