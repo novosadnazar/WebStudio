@@ -30,28 +30,36 @@
 
   &__adpt {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
     flex-direction: column;
-
-
+    justify-content: center;
+    align-items: baseline;
+    gap: 60px;
     @media screen and (min-width: 768px) {
       flex-direction: row;
-    }
-
+      gap: 165px;
+        }
+    
     @media screen and (min-width: 1200px) {
-      gap: 70px;
+      justify-content: start;
+      gap: 93px;
+      margin-right: auto;
     }
-  }
+      }
 
-  &__drop {
-    text-align: center;
-
+      &__drop {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+     @media screen and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+        }   
     @media screen and (min-width: 1200px) {
       text-align: start;
+      margin-left: 0;
+      margin-right: auto;
     }
-  }
+      }
 
 
 
@@ -317,7 +325,8 @@ margin-bottom: 20px;
     border: none;
     width: 200px;
     gap: 10px;
-   
+   margin-left: auto;
+   margin-right: auto;
     
 
     @media screen and (min-width: 480px) {

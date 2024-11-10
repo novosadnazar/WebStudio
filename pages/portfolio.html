@@ -23,42 +23,53 @@
   <body>
     <header class="header">
       <div class="container box">
-        <a href="../index.html" class="header__logo"
-          ><span class="header__span">Web</span>Studio</a
-        >
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="../index.html" class="nav__link">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="../pages/portfolio.html" class="nav__link current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header__list">
-          <li class="header__item">
-            <a
-              href="malito:info@devstudio.com"
-              target="_blank"
-              class="header__link"
-              ><svg class="header__convert header__smartphone">
-                <use href="./images/symbol-defs.svg#convert"></use></svg
-              ><span class="hd__span">info@devstudio.com</span></a
-            >
-          </li>
-          <li class="header__item">
-            <a href="tel:+380961111111" target="_blank" class="header__link"
-              ><svg class="header__smartphone">
-                <use href="./images/symbol-defs.svg#smartphone"></use></svg
-              ><span class="hd__span">+38 096 111 11 11</span></a
-            >
-          </li>
+      <a href="./index.html" class="header__logo "><span class="header__span">Web</span>Studio</a>
+      <button type="button" class="header__menu" modal-header-open><svg class="menu">
+        <use href="./images/symbol-defs.svg#menu"></use>
+      </svg></button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html" class="nav__link current">Студія</a></li>
+          <li class="nav__item"><a href="./pages/portfolio.html" class="nav__link">Портфоліо</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
         </ul>
+      </nav>
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="malito:info@devstudio.com" target="_blank"
+             class="header__link"><svg class="header__convert header__smartphone">
+              <use href="./images/symbol-defs.svg#convert"></use>
+             </svg><span class="header__spn">info@devstudio.com</span></a>
+        </li>
+        <li class="header__item">
+          <a href="tel:+380961111111" target="_blank" class="header__link"><svg class="header__smartphone">
+            <use href="./images/symbol-defs.svg#smartphone"></use>
+          </svg><span class="header__spn">+38 096 111 11 11</span></a>
+        </li>
+      </ul>
+      <div class="mobail__menu is-hidden" header-modal>
+<button type="button" class="mobail__button" modal-header-close>
+  <svg class="mobail__close">
+    <use href="./images/symbol-defs.svg#close"></use>
+  </svg>
+</button>
+<ul class="mobail__list">
+  <li class="mobail__item"><a href="./index.html" class="mobail__link">Студія</a></li>
+  <li class="mobail__item"><a href="./pages/portfolio.html" class="mobail__link">Портфоліо</a></li>
+  <li class="mobail__item"><a href="#" class="mobail__link">Контакти</a></li>
+</ul>
+<ul class="modail__leest">
+  <li class="modail__itm"><a href="tel:+380961111111" class="mobail__direc">+38 096 111 11 11</a></li>
+  <li class="modail__itm"><a href="mailto:info@devstudio.com" class="mobail__dir">info@devstudio.com</a></li>
+</ul>
+<ul class="mobail__liist">
+  <li class="mobail__part"><a href="https://www.instagram.com/" class="mobail__leenk">Instagram</a></li>
+  <li class="mobail__part"><a href="https://x.com/home?lang=uk" class="mobail__leenk">Twitter</a></li>
+  <li class="mobail__part"><a href="https://www.facebook.com/?locale=uk_UA" class="mobail__leenk">Facebook</a></li>
+  <li class="mobail__part"><a href="https://ua.linkedin.com/" class="mobail__leenk">LinkedIn</a></li>
+</ul>
       </div>
+    </div>
     </header>
     <main>
       <!-- секція карти товарів -->
@@ -243,8 +254,144 @@
     <footer class="footer">
       <div class="container footer__bex">
         <div class="footer__adpt">
-        <div class="footer__drop">
-      <a href="./portfolio.html" class="footer__logo"><span class="footer__span">Web</span>Studio</a>
+          <div class="footer__drop">
+          <a href="./portfolio.html" class="footer__logo"><span class="footer__span">Web</span>Studio</a>
+      <address class="footer__address">
+        <a href="https://maps.app.goo.gl/SYx98kfwkGa3Ucjc7"
+          class="address__link">м. Київ, пр-т Лесі Українки, 26</a>
+        <ul class="footer__list">
+          <li class="footer__iteam">
+            <a href="malito:info@example.com" target="_blank" class="footer__link">info@example.com</a>
+          </li>
+          <li class="footer__iteam">
+            <a href="tel:+380961111111" target="_blank" class="footer__link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+      <div class="footer__box">
+        <h2 class="footer__title">приєднуйтесь</h2>
+        <ul class="footer__lest">
+          <li class="footer__item">
+            <a href="#" class="foot__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="foot__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+        <div class="form__box">
+          <form class="footer__form">
+            <label class="footer__lbl">
+              Підпишіться на розсилку
+              <input type="email" class="footer__input" placeholder="E-mail" required>
+            </label>
+            <button type="submit" class="footer__sendd">
+              Підписатися
+              <svg class="footer__send">
+                <use href="./images/symbol-defs.svg#send">
+                </use>
+              </svg>
+            </button>
+          </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer__bex">
+        <div class="footer__adpt">
+          <div class="footer__drop">
+          <a href="./portfolio.html" class="footer__logo"><span class="footer__span">Web</span>Studio</a>
+      <address class="footer__address">
+        <a href="https://maps.app.goo.gl/SYx98kfwkGa3Ucjc7"
+          class="address__link">м. Київ, пр-т Лесі Українки, 26</a>
+        <ul class="footer__list">
+          <li class="footer__iteam">
+            <a href="malito:info@example.com" target="_blank" class="footer__link">info@example.com</a>
+          </li>
+          <li class="footer__iteam">
+            <a href="tel:+380961111111" target="_blank" class="footer__link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+      <div class="footer__box">
+        <h2 class="footer__title">приєднуйтесь</h2>
+        <ul class="footer__lest">
+          <li class="footer__item">
+            <a href="#" class="foot__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="foot__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__lenk">
+              <svg class="footer__svg">
+                <use href="./images/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+        <div class="form__box">
+          <form class="footer__form">
+            <label class="footer__lbl">
+              Підпишіться на розсилку
+              <input type="email" class="footer__input" placeholder="E-mail" required>
+            </label>
+            <button type="submit" class="footer__sendd">
+              Підписатися
+              <svg class="footer__send">
+                <use href="./images/symbol-defs.svg#send">
+                </use>
+              </svg>
+            </button>
+          </form>
+      </div>
+    </div>
+    </footer> <footer class="footer">
+      <div class="container footer__bex">
+        <div class="footer__adpt">
+          <div class="footer__drop">
+          <a href="./portfolio.html" class="footer__logo"><span class="footer__span">Web</span>Studio</a>
       <address class="footer__address">
         <a href="https://maps.app.goo.gl/SYx98kfwkGa3Ucjc7"
           class="address__link">м. Київ, пр-т Лесі Українки, 26</a>
@@ -309,4 +456,5 @@
       </div>
     </div>
     </footer>
+    <script src="../js/mobail.js"></script>
 </html>

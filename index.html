@@ -15,6 +15,9 @@
     <header class="header">
       <div class="container box">
       <a href="./index.html" class="header__logo "><span class="header__span">Web</span>Studio</a>
+      <button type="button" class="header__menu" modal-header-open><svg class="menu">
+        <use href="./images/symbol-defs.svg#menu"></use>
+      </svg></button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="./index.html" class="nav__link current">Студія</a></li>
@@ -35,6 +38,28 @@
           </svg><span class="header__spn">+38 096 111 11 11</span></a>
         </li>
       </ul>
+      <div class="mobail__menu is-hidden" header-modal>
+<button type="button" class="mobail__button" modal-header-close>
+  <svg class="mobail__close">
+    <use href="./images/symbol-defs.svg#close"></use>
+  </svg>
+</button>
+<ul class="mobail__list">
+  <li class="mobail__item"><a href="./index.html" class="mobail__link">Студія</a></li>
+  <li class="mobail__item"><a href="./pages/portfolio.html" class="mobail__link">Портфоліо</a></li>
+  <li class="mobail__item"><a href="#" class="mobail__link">Контакти</a></li>
+</ul>
+<ul class="modail__leest">
+  <li class="modail__itm"><a href="tel:+380961111111" class="mobail__direc">+38 096 111 11 11</a></li>
+  <li class="modail__itm"><a href="mailto:info@devstudio.com" class="mobail__dir">info@devstudio.com</a></li>
+</ul>
+<ul class="mobail__liist">
+  <li class="mobail__part"><a href="https://www.instagram.com/" class="mobail__leenk">Instagram</a></li>
+  <li class="mobail__part"><a href="https://x.com/home?lang=uk" class="mobail__leenk">Twitter</a></li>
+  <li class="mobail__part"><a href="https://www.facebook.com/?locale=uk_UA" class="mobail__leenk">Facebook</a></li>
+  <li class="mobail__part"><a href="https://ua.linkedin.com/" class="mobail__leenk">LinkedIn</a></li>
+</ul>
+      </div>
     </div>
     </header>
     <main>
@@ -332,7 +357,8 @@
           <button type="submit" class="modal__btn">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobail.js"></script>
   </body>
-</html> -->
+</html>
