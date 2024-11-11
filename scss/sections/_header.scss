@@ -173,6 +173,11 @@
   line-height: 1.2;
   letter-spacing: 0.28px;
   margin-right: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
   &__link {
     color: $text-color;
@@ -187,22 +192,17 @@
   }
 
   &__list {
-    display: none;
+  
     gap: 50px;
     justify-content: center;
 
-    @media screen and (min-width: 480px) {
-      display: none;
-    }
-
+ 
     @media screen and (min-width: 768px) {
       display: flex;
       gap: 50px;
     }
 
-    @media screen and (min-width: 1200px) {
-      
-    }
+
   }
 
   &__link:hover,
@@ -247,7 +247,7 @@
 .header__menu{
   background: none;
   border: transparent;
-  margin-left: 276px;
+  margin-left: auto;
   @media screen and (min-width: 768px)  {
     display: none;
   }
