@@ -1008,21 +1008,22 @@ body {
 }
 .footer__adpt {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
   flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__adpt {
     flex-direction: row;
-    align-items: baseline;
+    gap: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__adpt {
-    align-items: center;
-    gap: 70px;
+    justify-content: start;
+    gap: 93px;
+    margin-right: auto;
   }
 }
 .footer__drop {
@@ -1103,15 +1104,13 @@ body {
 }
 .footer__bex {
   display: flex;
-  gap: 60px;
   flex-direction: column;
-  align-items: baseline;
-  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__bex {
     flex-direction: row;
-    gap: 70px;
+    text-align: start;
+    align-items: baseline;
   }
 }
 .footer__box {
@@ -1157,6 +1156,9 @@ body {
 }
 .footer__lenk:hover, .footer__lenk:focus {
   background-color: #2196F3;
+}
+.footer .form-box {
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer .form-box {
@@ -1314,6 +1316,18 @@ body {
   padding: 40px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__button {
   width: 30px;
   height: 30px;
@@ -1347,6 +1361,20 @@ body {
   line-height: 1.15;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+    line-height: 1.15;
+  }
 }
 .modal__bux {
   position: relative;
@@ -1391,6 +1419,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
+@media screen and (min-width: 480px) {
+  .modal__input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
+  }
+}
 .modal__input:hover, .modal__input:focus {
   border-color: #2196F3;
   border-radius: 4px;
@@ -1399,37 +1437,43 @@ body {
   fill: #2196F3;
 }
 .modal__com {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.12px;
   display: block;
   width: 100%;
-  height: 140px;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  resize: none;
-  margin-bottom: 10px;
+  height: 120px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-color: #AFB1B8;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  resize: none;
+  margin-top: 4px;
+  outline: none;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
+@media screen and (min-width: 480px) {
+  .modal__com {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__com {
+    width: 448px;
+    margin-bottom: 25px;
+  }
+}
 .modal__com:hover .modal__com:focus {
   color: #2196F3;
   outline: 1px solid var(--accent-text-color);
 }
-.modal__span {
+.modal__link {
   color: #2196F3;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
-  margin-left: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1445,17 +1489,29 @@ body {
 }
 .modal__text {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.42px;
   display: flex;
-  flex-direction: reverse;
-  margin-left: 8px;
+  flex-wrap: wrap;
+  margin-right: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    font-size: 14px;
+    line-height: 1.7px;
+  }
 }
 .modal__checkbox {
   width: 16px;
   height: 15px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox {
+    margin-bottom: 34px;
+  }
 }
 .modal__lbl {
   display: flex;
