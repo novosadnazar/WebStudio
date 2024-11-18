@@ -308,6 +308,7 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  z-index: 1;
 }
 
 .is-hidden {
@@ -326,6 +327,7 @@ body {
 .mobail__close {
   width: 40px;
   height: 40px;
+  fill: #000;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1018,6 +1020,7 @@ body {
   .footer__adpt {
     flex-direction: row;
     gap: 165px;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1025,6 +1028,7 @@ body {
     justify-content: start;
     gap: 93px;
     margin-right: auto;
+    align-items: start;
   }
 }
 .footer__drop {

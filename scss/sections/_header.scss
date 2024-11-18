@@ -248,6 +248,7 @@
   background: none;
   border: transparent;
   margin-left: auto;
+
   @media screen and (min-width: 768px)  {
     display: none;
   }
@@ -270,6 +271,7 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+ z-index: 1;
 }
 .is-hidden{
   pointer-events: none;
@@ -286,6 +288,7 @@
 .mobail__close{
 width: 40px;
 height: 40px;
+fill: #000;
 transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
