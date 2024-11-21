@@ -1321,10 +1321,10 @@ body {
   padding: 40px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 425px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1539,4 +1539,5 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
