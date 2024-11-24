@@ -1335,7 +1335,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 90%;
   background-color: #FFF;
   border-radius: 4px;
   position: absolute;
@@ -1345,10 +1345,10 @@ body {
   padding: 40px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .modal {
-    width: 425px;
-    height: 600px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
