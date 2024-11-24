@@ -409,32 +409,32 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/heromodail@1x.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/heromodail@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/heromobail@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/heromobail@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding-bottom: 233px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/herotablet@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/herotablet@1x.webp);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/herotablet@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/herotablet@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/herodesktop@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/herodesktop@1x.webp);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/herodesktop@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/herodesktop@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -537,6 +537,7 @@ body {
   background-color: #F5F4FA;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(../images/antenna.png);
 }
 @media screen and (min-width: 480px) {
   .services__item::before {
@@ -553,17 +554,14 @@ body {
     width: 270px;
   }
 }
-.services__item:first-child::before {
-  background-image: url(../../images/antenna.png);
-}
 .services__item:nth-child(2)::before {
-  background-image: url(../../images/clock.png);
+  background-image: url(../images/clock.png);
 }
 .services__item:nth-child(3)::before {
-  background-image: url(../../images/diagram1.png);
+  background-image: url(../images/diagram1.png);
 }
 .services__item:last-child::before {
-  background-image: url(../../images/astronaut.png);
+  background-image: url(../images/astronaut.png);
 }
 .services__title {
   color: #212121;
